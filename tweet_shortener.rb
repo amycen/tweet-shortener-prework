@@ -16,7 +16,6 @@ def dictionary(word)
 end
 
 def word_substituter(tweet)
-  tweet.split
-  tweet.split.each {|word| puts dictionary(word)}
+  test = tweet.split.map {|word| dictionary(word)}
 
 end

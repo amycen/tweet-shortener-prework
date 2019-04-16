@@ -13,6 +13,7 @@ def dictionary(word)
     "and" => "&"
   }
   word =  dict[word] if dict.has_key?(word)
+  word
 end
 
 def word_substituter(tweet)

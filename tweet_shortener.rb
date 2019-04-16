@@ -12,10 +12,9 @@ def dictionary(word)
     at: "@",
     and: "&"
   }
-  word = dict[word]
-  word
+  translated if dict[word]
 end
 
 def word_substituter(tweet)
-  tweet.split.map {|word| dictionary(word)}.join(" ")
+  tweet.split.each {|word| dictionary(word)}.join(" ")
 end

@@ -17,4 +17,5 @@ def dictionary(word)
 end
 
 def word_substituter(tweet)
-  tweet.split.downcase.each {|word| word = if dictionary(word)}.join
+  tweet.split.downcase.each {|word| dictionary(word)}.join
+end

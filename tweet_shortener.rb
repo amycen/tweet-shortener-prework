@@ -14,7 +14,6 @@ def dictionary(word)
     and: "&"
   }
   word =  dict[word]
-  binding.pry
 end
 
 def word_substituter(tweet)

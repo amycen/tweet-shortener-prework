@@ -12,3 +12,5 @@ def dictionary(word)
     at: "@",
     and: "&"
   }
+  dict[word]
+end

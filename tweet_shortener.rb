@@ -17,5 +17,5 @@ def dictionary(word)
 end
 
 def word_substituter(tweet)
-  tweet.split.each {|word| dictionary(word)}.join(" ")
+  tweet.split.map {|word| dictionary(word)}.join(" ")
 end

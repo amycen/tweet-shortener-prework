@@ -1,4 +1,5 @@
 # Write your code here.
+require "pry"
 def dictionary(word)
   dict = {
     hello: "hi",
@@ -17,5 +18,5 @@ end
 
 def word_substituter(tweet)
   test = tweet.split.map {|word| dictionary(word)}
-
+  binding.pry
 end

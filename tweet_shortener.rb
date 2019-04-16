@@ -12,5 +12,9 @@ def dictionary(word)
     at: "@",
     and: "&"
   }
-  dict[word]
+  word = dict[word]
+  word
 end
+
+def word_substituter(tweet)
+  tweet.split.downcase.each {|word| word = if dictionary(word)}.join

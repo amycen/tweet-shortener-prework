@@ -16,8 +16,7 @@ def dictionary(word)
 end
 
 def word_substituter(tweet)
-  test = tweet.split.map {|word| dictionary(word)}
+  test = tweet.split.map {|word| dictionary(word)}.join(" ")
 end
 
-puts dictionary("hello")
 puts word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")

@@ -12,7 +12,7 @@ def dictionary(word)
     "at" => "@",
     "and" => "&"
   }
-  word =  dict[word] if dict.has_key(word)
+  word =  dict[word] if dict.has_key?(word)
 end
 
 def word_substituter(tweet)

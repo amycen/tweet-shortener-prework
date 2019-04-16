@@ -16,7 +16,7 @@ def dictionary(word)
 end
 
 def word_substituter(tweet)
-  tweet.split 
+  tweet.split
   tweet.split.each {|word| dictionary(word)}.join(" ")
-  
+
 end

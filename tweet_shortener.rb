@@ -19,3 +19,7 @@ end
 def word_substituter(tweet)
   tweet.split.map {|word| dictionary(word)}.join(" ")
 end
+
+def bulk_tweet_shortener(tweet_array)
+  tweet_array.map {|tweet| puts word_substituter(tweet)}
+end
